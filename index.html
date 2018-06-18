@@ -8,6 +8,104 @@
 		*{
 			background: #515151;
 		}
+		.cir{
+			float: left;
+		}
+
+		#circle1{
+		    background-color:#FFC125;  
+		    width: 30px;  
+		    height: 30px;  
+		    margin: 0px 0 0 0px;  
+		    border-radius: 50%;  
+	    }  
+	    #circle2 {  
+		    background-color:#515151;  
+		    width: 24px;  
+		    height: 24px;  
+		    margin: -27.5px 0 0 3px;  
+		    border-radius: 50%;  
+	    }
+	    #circle3 {  
+		    background-color:#FFC125;  
+		    width: 20px;  
+		    height: 20px;  
+		    margin: -22px 0 0 5px;  
+		    border-radius: 50%;  
+	    }
+	    #x{
+	    	margin-left: 15px;
+	    	margin-top: 5px;
+	    	width: 0px;
+	    	height: 40px;
+			border: 1px solid #FFC125;
+	    }
+	    #x2{
+	    	margin-left: 15px;
+	    	margin-top: 3px;
+	    	width: 0px;
+	    	height: 65px;
+			border: 1px solid #FFC125;
+	    }
+
+		#rcircle1{
+		    background-color:#FF4040;  
+		    width: 30px;  
+		    height: 30px;  
+		    margin: 0px 0 0 0px;  
+		    border-radius: 50%;  
+	    }  
+	    #rcircle2 {  
+		    background-color:#515151;  
+		    width: 24px;  
+		    height: 24px;  
+		    margin: -27.5px 0 0 3px;  
+		    border-radius: 50%;  
+	    }
+	    #rcircle3 {  
+		    background-color:#FF4040;  
+		    width: 20px;  
+		    height: 20px;  
+		    margin: -22px 0 0 5px;  
+		    border-radius: 50%;  
+	    }
+	    #rx{
+	    	margin-left: 15px;
+	    	margin-top: 5px;
+	    	width: 0px;
+	    	height: 65px;
+			border: 1px solid #FF4040;
+	    }
+	    #rx2{
+	    	margin-left: 15px;
+	    	margin-top: 3px;
+	    	width: 0px;
+	    	height: 90px;
+			border: 1px solid #FF4040;
+	    }
+
+		#bcircle1{
+		    background-color:#6495ED;  
+		    width: 30px;  
+		    height: 30px;  
+		    margin: 0px 0 0 0px;  
+		    border-radius: 50%;  
+	    } 
+	    #bcircle2 {  
+		    background-color:#515151;  
+		    width: 24px;  
+		    height: 24px;  
+		    margin: -27.5px 0 0 3px;  
+		    border-radius: 50%;  
+	    }
+	    #bcircle3 {  
+		    background-color:#6495ED;  
+		    width: 20px;  
+		    height: 20px;  
+		    margin: -22px 0 0 5px;  
+		    border-radius: 50%;  
+	    }
+		
 		.b1{
 			font-size: 50px;
 			color: #ffffff;
@@ -16,54 +114,60 @@
 			font-size: 30px;
 			color: #FFC125;
 		}
+		.b3{
+			font-size: 30px;
+			color: #FF4040;
+		}
+		.b4{
+			font-size: 30px;
+			color: #6495ED;
+		}
 		p{
 			color: #ffffff;
 		}
 		.title{
 			/*text-align: center;*/
 			border: 1px dashed #fff;
-			margin-left: 15%;
-			width: 70%;
+			margin-left: 18%;
+			width: 65%;
 			height: 200px;
 		}
 		.left1{
-			float: left;
-			/*margin-left: 8%;*/
-			border: 1px dashed #fff;
-			
-		}
-		.left1.img{
-			margin-left: 8%;
-			width: 200px;
+			width: 30%;
 			height: 200px;
-			border: 2px solid #fff;
+			float: left;
+			border: 1px dashed #fff;
+		}
+		.left1 img{
+			margin-left: 30%;
+			margin-top: 5%;
+			width: 150px;
+			height: 150px;
+			border: 3px solid #fff;
 			border-radius: 100%;
 		}
 		.right1{
-			float: right;
-			width: 69%;
+			overflow:hidden;/*自动填充剩余div宽度*/
 			height: 200px;
 			border: 1px dashed #fff;
 			text-align: center;
+		}
+		.right1 .text{
+			margin-left: 35%;
+			text-align: left;
 		}
 
 
 		.content{
 			border: 1px dashed #fff;
-			margin-left: 15%;
-			width: 70%;
-			height: 500px;
+			margin-left: 18%;
+			width: 65%;
+			height: 300px;
 		}
 		.left2{
 			float: left;
 			width: 70%;
-			height: 500px;
-			border: 1px dashed #fff;
-			text-align: center;
-		}
-		.right2{
-			width: block;
-			height: 500px;
+			height: 300px;
 			border: 1px dashed #fff;
 			text-align: center;
 		}
@@ -71,14 +175,115 @@
 			width: 85%;
 			margin-left: 10%;
 			text-align: left;
+			font-size: 22px;
+		}
+		.left2 .text p{
+			margin-left: 8%;
 		}
 
+		.right2{
+			overflow:hidden;/*自动填充剩余div宽度*/
+			height: 300px;
+			border: 1px dashed #fff;
+			text-align: center;
+		}
+		.right2 .text{
+			width: 80%;
+			margin-left: 20%;
+			text-align: left;
+			font-size: 22px;
+		}
+
+
+		.content3{
+			border: 1px dashed #fff;
+			margin-left: 18%;
+			width: 65%;
+			height: 500px;
+		}
+		.left3{
+			float: left;
+			width: 70%;
+			height: 500px;
+			border: 1px dashed #fff;
+			text-align: center;
+		}
+		.left3 .text{
+			width: 85%;
+			margin-left: 10%;
+			text-align: left;
+			font-size: 22px;
+		}
+		.left3 .text p{
+			margin-left: 8%;
+		}
+
+		.right3{
+			overflow:hidden;/*自动填充剩余div宽度*/
+			height: 500px;
+			border: 1px dashed #fff;
+			text-align: center;
+		}
+		.right3 .text{
+			width: 80%;
+			margin-left: 20%;
+			text-align: left;
+			font-size: 22px;
+		}
+
+		.percent{
+			height: 0px;
+			width: 80%;
+			border: 3px solid #000;
+		}
+		.percent .num{
+			margin: -3px 0 0 -3px;
+			height: 0px;
+			border: 3px solid #CDC9C9;
+		}
+
+
+		.footer{
+			border: 1px dashed #fff;
+			margin-left: 18%;
+			width: 65%;
+			height: 200px;
+		}
+		.left4{
+			float: left;
+			width: 70%;
+			height: 200px;
+			border: 1px dashed #fff;
+			text-align: center;
+		}
+		.left4 .text{
+			width: 85%;
+			margin-left: 10%;
+			text-align: left;
+			font-size: 22px;
+		}
+		.left4 .text p{
+			margin-left: 8%;
+		}
+
+		.right4{
+			overflow:hidden;/*自动填充剩余div宽度*/
+			height: 200px;
+			border: 1px dashed #fff;
+			text-align: center;
+		}
+		.right4 .text{
+			width: 80%;
+			margin-left: 20%;
+			text-align: left;
+			font-size: 22px;
+		}
 	</style>
 </head>
 <body>
 	<div class="title">
 		<div class="left1">
-			<img src="">
+			<img src="./1.png">
 		</div>
 		<div class="right1" align="center">
 			<br>
@@ -86,7 +291,7 @@
 			<div class="text">
 				<p>期望岗位：php开发工程师</p>
 				<p>目标城市：广州、深圳</p>
-				<p>目标薪资：3500-5000 元/月</p>
+				<p>目标薪资：4000-6000 元/月</p>
 			</div>
 		</div>
 	</div>
@@ -96,9 +301,17 @@
 			<br>
 			<b class="b2">专业能力</b>
 			<div class="text">
+				<div class="cir"><div id="circle1"></div><div id="circle2"></div><div id="circle3"></div><div id="x"></div></div>
+				
 				<p>熟悉php+mysql开发，接触过thinkphp开发框架，用原生php独立为别人开发过一个商铺自用后台项目，目前已投入测试试用</p>
+
+				<div class="cir"><div id="circle1"></div><div id="circle2"></div><div id="x2"></div></div>
+
 				<p>在校学习过java、html5+css+js、php、js等语言，自学过python+hadoop大数据基础；熟悉服务器（linux）操作命令及简单配置，如lamp等。</p>
-				<p>个人优势 : 有较强的自学能力，能在实践中学习，吸取经验。</p>
+
+				<div class="cir"><div id="circle1"></div><div id="circle2"></div></div>
+
+				<p>个人优势 : 在校期间专业课几乎都以优秀成绩通过学校审核，有较扎实的基础。有较强的自学能力，能在实践中学习，吸取经验。</p>
 			</div>
 		</div>
 		<div class="right2">
@@ -109,6 +322,60 @@
 				<p>邮箱： 448127092@qq.com</p>
 				<p>TEL : 15218985036</p>
 				<p>QQ  : 448127092</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="content3">
+		<div class="left3">
+			<br>
+			<b class="b3">实践经历</b>
+			<div class="text">
+				<div class="cir"><div id="rcircle1"></div><div id="rcircle2"></div><div id="rcircle3"></div><div id="rx"></div></div>
+
+				<p><b>斯古秀正装：</b><br>为校外一个开正装店的师兄开发了一个内部使用的后台，其中实现了php+mysql基本的增删改成功能和用户分级登录注册功能。</p>
+
+				<div class="cir"><div id="rcircle1"></div><div id="rcircle2"></div><div id="rx2"></div></div>
+
+				<p><b>项目功能：</b><br>整体网站小部分由同伴开发，大部分功能由本人独立开发，该项目中也实现了微信支付、支付宝支付以及快递100的接口，可正常使用。</p>
+
+				<div class="cir"><div id="rcircle1"></div><div id="rcircle2"></div></div>
+
+				<p><b>项目缺陷：</b><br>由于之前在校没有类似的实战经验，会在实战中遇到许多小问题，但目前遇到问题都能自行解决。同时也在实践中进步，个人有较强的自学能力。</p>
+			</div>
+		</div>
+		<div class="right3">
+			<br>
+			<b class="b3">个人技能</b>
+			<div class="text">
+				<p>php</p>
+				<div class="percent"><div class="num" style="width: 80%"></div></div>
+				<p>html+css</p>
+				<div class="percent"><div class="num" style="width: 80%"></div></div>
+				<p>python</p>
+				<div class="percent"><div class="num" style="width: 60%"></div></div>
+				<p>linux</p>
+				<div class="percent"><div class="num" style="width: 50%"></div></div>
+				<p>javascript</p>
+				<div class="percent"><div class="num" style="width: 50%"></div></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="left4">
+			<br>
+			<b class="b4">教育背景</b>
+			<div class="text">
+				<div class="cir"><div id="bcircle1"></div><div id="bcircle2"></div><div id="bcircle3"></div></div>
+				<p>广东机电职业技术学院&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;软件技术专业</p>
+			</div>
+		</div>
+		<div class="right4">
+			<br>
+			<b class="b4">技能证书</b>
+			<div class="text">
+				<p>获得java技术水平证书</p>
 			</div>
 		</div>
 	</div>
