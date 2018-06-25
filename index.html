@@ -282,6 +282,11 @@
 
 	<script type="text/javascript">
         function browserRedirect() {
+        	var ua = navigator.userAgent;
+			var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+			isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+			isAndroid = ua.match(/(Android)\s+([\d.]+)/);
+
             var sUserAgent = navigator.userAgent.toLowerCase();
             var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
             var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
@@ -291,7 +296,7 @@
             var bIsAndroid = sUserAgent.match(/android/i) == "android";
             var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
             var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || isIphone || isAndroid) {
                 //跳转移动端页面
                 window.location.href="./mindex.html";
             } else {
