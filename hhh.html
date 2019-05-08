@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getgirl</title>
+</head>
+<style type="text/css">
+	.img{
+		text-align: center;
+	}
+	.btnbox{
+		text-align: center;
+	}
+	.btnbox a{
+		position:relative;
+		float: left;
+		width: 100px;
+		height: 30px;
+		color: #fff;
+		margin-left: 10px;
+		text-align: center;
+	}
+	#yesbtn{
+		left:40%;
+		background: #7CFC00;
+	}
+	#nobtn{
+		left:40%;
+		background: #EE3B3B;
+	}
+</style>
+<body>
+	<div>
+		<div class="img">
+			<img src="./index.jpg">
+		</div>
+		<div class="btnbox">
+			<a href="" id="yesbtn" onclick="yesbtn()"><div class="yes">yes</div></a>
+			<a href="" onmouseover="dontno()" id="nobtn" style=""><div class="no">no</div></a>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	function dontno() {
+		var x = document.documentElement.clientWidth;
+		var y = document.documentElement.clientHeight;
+
+		var yran = Math.random();
+		var xran = Math.random();
+
+		var newx = Math.ceil(xran*x);
+		var newy = Math.ceil(yran*y);
+
+		var sty = 'left:'+newx+'px;top:'+newy+'px;';
+
+		document.getElementById("nobtn").style.cssText = sty;
+		document.getElementById("nobtn").setAttribute("style",sty);
+		// alert('why!');
+	}
+
+	function yesbtn() {
+		alert('恭喜你已经领取到了一个聪明帅气的小靓仔！');
+	}
+</script>
